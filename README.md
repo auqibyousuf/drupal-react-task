@@ -6,13 +6,15 @@
   
 * ```drush sql-cli < ~/path/to/db-file.sql```
 <hr>
+
 # Start Drupal Project
 
 * `cd drupal-project`
 * `ddev start`
 * `ddev composer install`
 <hr>
-# To run react
+
+# Start react
 
 Open new terminal window and run react  project
 
