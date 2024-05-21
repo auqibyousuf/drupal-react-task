@@ -1,13 +1,21 @@
 # Getting Started with Decoupled React
 
-## To start Drupal
+# Import db first
+* Extract gz file located inside drupal project
+* import `.sql` using below command
+  
+* ```drush sql-cli < ~/path/to/db-file.sql```
+<hr>
+Start Drupal Project
 
-### `cd drupal-project-> ddev start->ddev composer install##this will start a drupal instance`
+* `cd drupal-project`
+* `ddev start`
+* `ddev composer install`
+<hr>
+Open new terminal window and run react  project
 
-Now to run react go to the project directory :
+* `cd ecommerce-react`
 
-### `cd ecommerce-react`
+* `yarn install`
 
-### `yarn install`
-
-### `yarn start`
+* `yarn start`
