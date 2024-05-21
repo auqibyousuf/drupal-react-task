@@ -1,0 +1,17 @@
+@import '../../globals.scss';
+
+.text-heading {
+  font-size: $font-xlg;
+  font-weight: 600;
+  margin: 0;
+  font-family: $font-heading;
+  line-height: 36px;
+}
+
+@media (max-width:600px) {
+  .text-heading {
+    font-size: $font-lg;
+    line-height: 22px;
+  }
+
+}

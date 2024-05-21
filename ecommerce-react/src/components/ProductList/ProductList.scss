@@ -1,0 +1,20 @@
+@import '../../globals.scss';
+
+.product-list-container {
+  display: flex;
+  column-gap: 40px;
+  flex-wrap: wrap;
+  row-gap: 100px;
+  justify-content: center;
+
+  li {
+    @include list-style-none;
+  }
+}
+
+@media (max-width:800px) {
+  .product-list-container {
+    padding: 16px;
+    justify-content: space-between;
+  }
+}
