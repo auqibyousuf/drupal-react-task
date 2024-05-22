@@ -10,7 +10,9 @@ const ProductList = () => {
   const [isLoading, setIsLoading] = useState(false)
   const getData = async () => {
     try {
-      const data = await fetch('https://drupal-project.ddev.site/products')
+      const data = await fetch(
+        `${process.env.REACT_APP_DRUPAL_END_POINT}/products`
+      )
       const results = await data.json()
       setProducts(results)
     } catch (error) {
@@ -40,7 +42,7 @@ const ProductList = () => {
             return (
               <li key={product.nid}>
                 <Product
-                  imgSrc={`${process.env.REACT_APP_DRUPAL_END_POINT}${product.field_product_image}`}
+                  imgSrc={`${process.env.REACT_APP_DRUPAL_END_POINT}/${product.field_product_image}`}
                   title={product.field_product_name}
                   price={product.field_product_price}
                   addBtnClick={() => {

@@ -44,7 +44,7 @@ const Modal = ({ showModal, toggle }) => {
                     <tr className='cart-item' key={item.nid}>
                       <td className='cart-item__image'>
                         <img
-                          src={`${process.env.REACT_APP_DRUPAL_END_POINT}${item.field_product_image}`}
+                          src={`${process.env.REACT_APP_DRUPAL_END_POINT}/${item.field_product_image}`}
                           alt={'image'}
                         />
                       </td>
