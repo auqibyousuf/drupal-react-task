@@ -1,10 +1,9 @@
 # Getting Started with Decoupled React
 
 # Import db first
-* Extract gz file located inside drupal project
 * import `.sql` using below command
   
-* ```drush sql-cli < ~/path/to/db-file.sql```
+* ```ddev import-db --file=./db-file.sql```
 <hr>
 
 # Start Drupal Project
