@@ -8,14 +8,10 @@
 - `ddev start`
 - `ddev composer install`
 - `ddev drush cr`
-
-# Import db
-
-- import `.sql` using below command
 - `ddev import-db --file=./db-file.sql`
 <hr>
 
-# Start react
+# Start React-frontend
 
 Open new terminal window and run react project
 
