@@ -11,10 +11,3 @@
     @include list-style-none;
   }
 }
-
-@media (max-width:800px) {
-  .product-list-container {
-    padding: 16px;
-    justify-content: space-between;
-  }
-}

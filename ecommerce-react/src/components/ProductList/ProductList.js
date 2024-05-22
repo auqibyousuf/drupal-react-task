@@ -28,41 +28,43 @@ const ProductList = () => {
 
   const { addToCart } = useContext(CartContext)
   return (
-    <ul className='product-list-container'>
+    <>
       <div>
         <Toaster position='top-center' />
       </div>
-      {isLoading ? (
-        <Loader />
-      ) : (
-        products.map((product) => {
-          return (
-            <li key={product.nid}>
-              <Product
-                imgSrc={`${process.env.REACT_APP_DRUPAL_END_POINT}${product.field_product_image}`}
-                title={product.field_product_name}
-                price={product.field_product_price}
-                addBtnClick={() => {
-                  addToCart(product)
+      <ul className='product-list-container'>
+        {isLoading ? (
+          <Loader />
+        ) : (
+          products.map((product) => {
+            return (
+              <li key={product.nid}>
+                <Product
+                  imgSrc={`${process.env.REACT_APP_DRUPAL_END_POINT}${product.field_product_image}`}
+                  title={product.field_product_name}
+                  price={product.field_product_price}
+                  addBtnClick={() => {
+                    addToCart(product)
 
-                  toast.success('Item added to Cart.', {
-                    style: {
-                      border: '1px solid green',
-                      padding: '16px',
-                      color: 'green',
-                    },
-                    iconTheme: {
-                      primary: 'green',
-                      secondary: '#FFFAEE',
-                    },
-                  })
-                }}
-              />
-            </li>
-          )
-        })
-      )}
-    </ul>
+                    toast.success('Item added to Cart.', {
+                      style: {
+                        border: '1px solid green',
+                        padding: '16px',
+                        color: 'green',
+                      },
+                      iconTheme: {
+                        primary: 'green',
+                        secondary: '#FFFAEE',
+                      },
+                    })
+                  }}
+                />
+              </li>
+            )
+          })
+        )}
+      </ul>
+    </>
   )
 }
 

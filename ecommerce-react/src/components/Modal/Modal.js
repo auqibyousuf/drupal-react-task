@@ -86,7 +86,7 @@ const Modal = ({ showModal, toggle }) => {
               </tbody>
             </table>
           ) : (
-            <p>Your Cart is Empty</p>
+            <p className='modal-cart-empty'>Your Cart is Empty</p>
           )}
 
           <div className='modal-footer'>
