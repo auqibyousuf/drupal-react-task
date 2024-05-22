@@ -1,0 +1,14 @@
+name: Advanced CORS
+type: module
+description: Advanced CORS - Provides possibility to customize settings CORS by path patterns.
+package: Other
+core_version_requirement: '>=8'
+configure: entity.route_config.collection
+
+dependencies:
+  - drupal:path_alias
+
+# Information added by Drupal.org packaging script on 2023-09-13
+version: '8.x-1.5'
+project: 'advanced_cors'
+datestamp: 1694615971

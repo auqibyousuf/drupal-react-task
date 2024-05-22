@@ -1,0 +1,9 @@
+services:
+  advanced_cors.patterns_cache:
+    class: Drupal\advanced_cors\PatternsCache
+    arguments: ['@entity_type.manager', '@cache.default']
+  advanced_cors.event_subscriber:
+    class: Drupal\advanced_cors\EventSubscriber\AdvancedCorsEventSubscriber
+    arguments: ['@entity_type.manager', '@path_alias.manager', '@path.matcher', '@advanced_cors.patterns_cache']
+    tags:
+      - { name: event_subscriber }
