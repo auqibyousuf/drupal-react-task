@@ -29,13 +29,6 @@ yarn-error.log*
 # local env files
 
 
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
-
 
 # Ignore configuration files that may contain sensitive information.
 !web/sites/default/settings.php
@@ -51,7 +44,14 @@ web/sites/*/settings.ddev.php
 
 */vendor/
 */web/core/
-*/web/sites/default/files
+
+# Ignore all 'files' directories at any level
+**/web/sites/default/files/*
+
+# Include '2024-05' directories within any 'files' directory
+!**/web/sites/default/files/2024-05
+
+
 
 # Ignore scaffold files
 */web/.csslintrc
