@@ -49,6 +49,7 @@ const ProductList = () => {
                     addToCart(product)
 
                     toast.success('Item added to Cart.', {
+                      duration: 1000,
                       style: {
                         border: '1px solid green',
                         padding: '16px',

@@ -29,7 +29,15 @@
 
 @media (max-width:600px) {
   .product-container {
-    width: 100%;
+    width: 90vw;
+    max-height: max-content;
+
+    .product-body {
+      height: auto;
+      gap: 20px;
+    }
+
+
 
     img {
       width: 100%;

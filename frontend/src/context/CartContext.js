@@ -26,6 +26,7 @@ const CartContextProvider = ({ children }) => {
         )
       } else {
         toast.error('Cannot add more items', {
+          duration: 1000,
           style: {
             border: '1px solid #FF3333',
             padding: '16px',

@@ -11,3 +11,9 @@
     @include list-style-none;
   }
 }
+
+@media (max-width:600px) {
+  .product-list-container {
+    row-gap: 40px;
+  }
+}
