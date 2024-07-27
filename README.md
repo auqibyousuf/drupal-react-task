@@ -4,11 +4,12 @@
 
 # Start Drupal Project
 
-- `cd drupal-project`
+- `git clone https://github.com/auqibyousuf/drupal-react-task.git`
+- `cd drupal-react-task/drupal-project`
 - `ddev start`
 - `ddev composer install`
-- `ddev drush cr`
 - `ddev import-db --file=./db-file.sql`
+- `ddev drush cr`
 <hr>
 
 # Start React-frontend
